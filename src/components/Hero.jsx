@@ -1,8 +1,8 @@
 import React from 'react'
 import { ReactTyped } from 'react-typed';
 import Model1 from '../assets/model1.png'
-import whatsapp from '../assets/Whatsapp.svg'
-import linkedIn from '../assets/linkedIn.svg'
+import { ImWhatsapp } from "react-icons/im";
+import { AiOutlineLinkedin } from "react-icons/ai";
 import jd from '../assets/jank-design.png'
 import {motion} from "framer-motion"
 import { fadeIn } from '../variants';
@@ -49,10 +49,10 @@ const Hero = () => {
         </div>
         <div className='bg-yellow md:absolute md:h-24 right-0 px-8 md:col-end-2 md:col-span-1 col-span-2 end w-full md:w-[385px] h-auto pt-2 end-0 '>
           <p className='text-center'>Nos partenaires</p>
-          <div className='flex justify-evenly px-10'>
-            <img className='px-4' src={whatsapp} alt='/' />
-            <img className='px-4' src={linkedIn} alt='/' />
-            <img className='px-4' src={jd} alt='/'/>
+          <div className='flex justify-evenly px-auto font-white w-full'>
+            <ImWhatsapp className='w-12' />
+            <AiOutlineLinkedin className='w-12' />
+            <img src={jd} alt='jank_design'/>
           </div>
         </div>
       </div>

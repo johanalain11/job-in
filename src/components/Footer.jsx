@@ -11,7 +11,7 @@ const Footer = () => {
     <div className='bg-black min-h-[170px] h-fit md:h-36'>
         <div className=' grid grid-cols-1 md:grid-cols-2 space-x-10 space-y-6 md:space-y-0 max-w-[1240px] text-white items-center py-6 md:mt-0 justify-center mx-auto'>
             <div className='flex flex-col md:flex-row justify-center items-center mx-auto space-y-6'>
-                <div className='md:min-w-60 w-full md:w-fit md:ml-8 flex flex-col justify-center items-center mx-auto ml-3'>
+                <div className='md:min-w-60 w-full md:w-fit flex flex-col justify-center items-center mx-auto '>
                     <img src={Logo} alt='/' className='justify-self-center md:justify-start w-40'/>
                     <div className='flex flex-col justify-center mx-auto mt-3 md:mt-8 gap-y-3'>
                         <div className='flex flex-row items-center'><FiPhone style={{color:'white'}}/><p className='px-2'> + 237 650 37 47 54 </p> </div>
@@ -19,7 +19,7 @@ const Footer = () => {
                         <div className='flex flex-row items-center'><GrLocation style={{color:'white'}}/><p className='px-2'> Yaoundé, Cameroun </p> </div>
                     </div>
                 </div>
-                <div className='md:ml-20 my-auto flex flex-row md:flex-col space-x-2 md:space-y-2 mx-3 md:mx-auto items-center justify-center'>
+                <div className='my-auto flex flex-row md:flex-col space-x-2 md:space-y-2 mx-3 md:mx-auto items-center justify-center'>
                     <p>Accueil</p>
                     <p>Inscription</p>
                     <p>Publicités</p>
@@ -28,7 +28,7 @@ const Footer = () => {
                     <p>Job-bers</p>
                 </div>
             </div>
-            <div className='space-y-3 pt-3 flex flex-col md:px-5 md:pl-20 justify-center md:items-start items-center'>
+            <div className='space-y-3 pt-3 flex flex-col md:px-5 justify-center md:items-start items-center'>
                 <Form.Root className="w-[260px]">
                     <Form.Field className="mb-2.5 grid" name="email">
                         <div className="flex items-baseline justify-between">
