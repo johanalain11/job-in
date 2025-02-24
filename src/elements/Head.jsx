@@ -12,7 +12,7 @@ const Head = (props) => {
       </span>
       <p className='font-bold md:ml-3 xl:ml-6 text-xl md:text-3xl xl:text-4xl'>{props.nom}</p>
       <div className='flex flex-row'>
-          <Link to='/'> <div className='border border-black text-lg md:text-xl xl:text-2xl mx-2 md:px-5 font-semibold text-yellow py-1 hover:scale-105 transition ease-out duration-300 hover:bg-yellow2 hidden sm:block'>
+          <Link to='/' className='flex px-auto justify-center items-center'> <div className='border border-black text-lg md:text-xl xl:text-2xl mx-2 md:px-5 px-1 font-semibold text-yellow py-1 hover:scale-105 transition ease-out duration-300 hover:bg-yellow2 hidden sm:block'>
               Retourner à l'accueil </div> 
           </Link>
           <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none" className='mx-2 md:mx-6 xl:mx-12 '>

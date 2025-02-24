@@ -4,7 +4,7 @@ import Logo3 from '../assets/logo3.png'
 import { BiHomeAlt2 } from "react-icons/bi";
 import { TbMessage } from "react-icons/tb";
 import { RiSearchLine } from "react-icons/ri";
-import { BsArrowLeftShort} from 'react-icons/bs';
+import { GoKebabHorizontal } from "react-icons/go";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { PiBuildingsBold } from "react-icons/pi";
 import { RiProfileLine } from "react-icons/ri";
@@ -48,9 +48,9 @@ const Menu = () => {
                 <img src={Logo} alt='/' className={`${!open ? "hidden": "inline-block"}`} />
                 <img src={Logo3} alt='/' className={`${!open ? "inline-block w-10 pb-4": "hidden"}`} />
                 </Link>
-                <BsArrowLeftShort className='bg-white text-green1 text-4xl absolute
-                -right-3 top-12 md:top-16 border-4 border-green3 cursor-pointer rounded-full'
-                onClick={() => setOpen(!open)} />
+                <div className='bg-white p-1 absolute -right-4 top-14 md:top-16 border-4 border-green3 shadow-xl shadow-green3 cursor-pointer rounded-full' onClick={() => setOpen(!open)} >
+                    <GoKebabHorizontal className=' text-green1 text-xl'/>
+                </div>
             </div>
             <div>
                 {
@@ -100,7 +100,7 @@ const Menu = () => {
             </div>
         </div>
         <div className='text-white mb-3'>
-            <div className='flex flex-row justify-center py-2 space-x-3 rounded-full hover:bg-green2 hover:text-white cursor-pointer transition duration-500 ease-in-out transform hover:scale-105'>
+            <div className='flex flex-row justify-center py-2 space-x-3 rounded-full cursor-pointer transition duration-500 ease-in-out transform hover:scale-105'>
             <MdOutlineAccountCircle className='text-5xl min-w-8' />
             <div className={`${!open ? "hidden": "justify-center flex flex-col space-y-1"}`}>
                 <p className='text-green1'>Johan NZALI</p>

@@ -19,11 +19,12 @@ const Hero = () => {
         whileInView={"show"}
         viewport={{once:true, amount: 0.7}}
         className='max-w-[1240px] mt-[-96px] h-screen mx-auto flex flex-col justify-center items-center md:items-start md:ms-4 xl:ms-24 2xl:ms-36'>
-            <p className='p-2 text-xl xl:text-2xl'>Vous voulez obtenir un job facilement?</p>
+            <p className='p-2 font-semibold text-xl md:text-2xl xl:text-2xl'>Vous voulez obtenir un job facilement?</p>
             <div className='text-yellow font-bold p-2 text-6xl lg:text-7xl xl:text-8xl text-center md:text-start float-left max-h-32 whitespace-nowrap overflow-visible' >
-            <ReactTyped strings={['Postulez à', 'Trouvez', 'Cherchez']} typeSpeed={60} backSpeed={100} loop/></div>
+              <ReactTyped strings={['Postulez à', 'Trouvez', 'Cherchez']} typeSpeed={60} backSpeed={100} loop/>
+            </div>
             <h1 className='text-white font-bold px-2 text-5xl lg:text-6xl xl:text-7xl'>un job</h1>
-            <p className='p-2 text-xl xl:mt-3 xl:text-2xl'>grâce à votre application  <ShinyText disabled={false} speed={3} className='text-2xl font-black font-["League Spartan"]' text="JOB-in"/></p>
+            <p className='p-2 font-semibold text-xl md:text-2xl md:mt-3 xl:text-2xl'>grâce à votre application  <ShinyText disabled={false} speed={3} className='text-2xl font-black font-["League Spartan"]' text="JOB-in"/></p>
             <Link to="/dashboard"><button className='text-2xl md:text-3xl xl:text-4xl m-2 p-2 md:px-6 w-max px-8 bg-yellow rounded-full font-black text-green1 inline button hover:px-8'>Inscrivez-vous !</button></Link>
             <div className='space-x-5 hidden'>
             <Link to="/dashboard-E"><button className='text-lg md:text-xl xl:text-2xl m-1 h-10 w-max px-3 bg-green3 rounded-full font-black text-green1 inline  hover:px-6 transition ease-out duration-500 hover:scale-105 hover:text-white'>Entreprise</button></Link>

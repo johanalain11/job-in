@@ -12,6 +12,7 @@ module.exports = {
       'green1': '#164A41',
       'green2': '#548464',
       'green3': '#9DC88D',
+      'green4': '#D3E6CB',
       'blue1': '#4640DE',
       'gray1': '#515B6F',
       'gray2': '#7C8493',
@@ -21,7 +22,7 @@ module.exports = {
       'red2': '#FDD'
     },
     fontFamily:{
-      'logo': ['League Spartan', 'Helvetica', 'sans-serif'],
+      logo: ['League Spartan', 'Helvetica', 'sans-serif'],
     },
     extend: {
       boxShadowColor:{
