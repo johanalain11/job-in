@@ -25,12 +25,12 @@ const PopularDomains = () => {
     ]
 
   return (
-    <div id='domains' className='max-w-[1240px] px-6 mt-12 xl:mt-20 md:mt-0 min-h-[650px] mx-8 justify-center md:items-start md:ms-4 xl:ms-36 '>
+    <div id='domains' className='max-w-[1240px] px-6 mt-12 xl:mt-20 md:mt-0 min-h-[650px] mx-8 justify-center md:items-start md:ms-4 xl:ms-36 rounded-b-[50px]'>
         <motion.div 
         variants={fadeIn("right", 0.1)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{once:false, amount: 0.7}}
+        viewport={{once:true, amount: 0.7}}
         className='mb-12'>
             <div className='font-bold text-4xl col-span-5 text-white'>Domaines <span className='text-yellow'>populaires</span></div>
             <div className='float-right right-0 md:-mt-6 md:mr-20 mr-6 text-yellow hover:bg-yellow2 transition ease-out duration-500 rounded-full p-2 hover:-translate-y-1'>Tous <img src={right} className='float-right mt-1 mx-2' alt='/'/> </div>

@@ -24,13 +24,13 @@ const PopularJobs = () => {
             description:"Revolut est à la recherche d'un Email Marketing pour aider...", type:"Temps plein", category:"Développement Web" }
     ]
   return (
-    <div className='bg-green1' id='jobs'>
+    <div className='bg-green1 rounded-br-[50px] rounded-tr-[50px]' id='jobs'>
     <div className='max-w-[1240px] px-6 items-center py-10 md:mt-0 min-h-[650px] ml-8 justify-center md:items-start md:ms-4 xl:ms-36 '>
         <motion.div
         variants={fadeIn("right", 0.1)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{once:false, amount: 0.7}}>
+        viewport={{once:true, amount: 0.7}}>
             <div className='font-bold text-4xl col-span-5 w-full items-center md:justify-start text-white'>Jobs <span className='text-yellow'>populaires</span></div>
             <div className='float-right right-0 md:-mt-6 md:mr-20 mr-6 text-yellow hover:bg-yellow2 transition ease-out duration-500 rounded-full md:p-2 hover:-translate-y-1'>Tous <img src={right} className='float-right mt-1 mx-2' alt='/'/> </div>
         </motion.div>

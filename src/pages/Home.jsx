@@ -7,6 +7,7 @@ import PopularDomains from '../components/PopularDomains';
 import PopularJobs from '../components/PopularJobs';
 import Content2 from '../components/content2';
 import Avis from '../components/Avis';
+import FAQ from '../components/Faq';
 import Footer from '../components/Footer';
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
         <PopularJobs />
         <Content2 />
         <Avis/>
+        <FAQ/>
         <Footer />
     </div>
   )

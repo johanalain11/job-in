@@ -6,7 +6,7 @@ import {Link } from 'react-router-dom'
 
 const content1 = () => {
   return (
-    <div className='px-auto text-white bg-green2 min-h-[400px] xl:pt-10 xl:pb-2 flex justify-center'>
+    <div className='px-auto text-white bg-green2 min-h-[400px] xl:pt-10 xl:pb-2 flex justify-center rounded-bl-[50px] rounded-tl-[50px]'>
       <div className='max-w-[1240px] flex justify-center'>
         <motion.div 
         variants={fadeIn("right", 0.1)}

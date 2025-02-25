@@ -32,9 +32,19 @@ module.exports = {
           '0%': { 'background-position': '100%' },
           '100%': { 'background-position': '-100%' },
         },
+        slideDown: {
+					from: { height: "0px" },
+					to: { height: "var(--radix-accordion-content-height)" },
+				},
+				slideUp: {
+					from: { height: "var(--radix-accordion-content-height)" },
+					to: { height: "0px" },
+				},
       },
       animation: {
       shine: 'shine 5s linear infinite',
+      slideDown: "slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)",
+      slideUp: "slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)",
       },
     },
   },

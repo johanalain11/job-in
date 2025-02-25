@@ -17,6 +17,7 @@ const Navbar = () => {
         {key:1, path:"domains" ,link: "Domaines"},
         {key:2, path:"jobs" ,link: "Jobs"},
         {key:3, path:"avis" ,link: "Avis"},
+        {key:4, path:"faq" ,link: "FAQ"},
     ]
 
 
@@ -38,7 +39,7 @@ const Navbar = () => {
             </span>
 
         {/* COTE MOBILE */}
-            <div onClick={handleNav} className='fixed right-6 md:hidden'>
+            <div onClick={handleNav} className='fixed right-6 md:hidden mt-4'>
                 {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/> }
             </div>
             <div className={!nav ? 'fixed left-0 top-0 w-[60%] md:hidden h-full border-r border-green1 bg-green3 ease-in-out duration-200' : 'fixed left-[-100%]' }>

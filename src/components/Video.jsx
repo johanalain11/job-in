@@ -8,7 +8,7 @@ import { fadeIn } from '../variants';
 const Video = () => {
   return (
     <div
-    className='w-full bg-green1 h-3/4 px-6 py-14 flex justify-center'>
+    className='w-full bg-green1 h-3/4 px-6 py-14 flex justify-center rounded-br-[50px] rounded-tr-[50px]'>
         <motion.div 
         variants={fadeIn("up", 0.1)}
         initial="hidden"

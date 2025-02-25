@@ -59,3 +59,44 @@ p {
 .padding_content {
   @apply p-3 md:p-4 xl:p-10;
 }
+.AccordionItem {
+  @apply mt-px overflow-hidden first:mt-0 first:rounded-t last:rounded-b focus-within:relative 
+}
+.AccordionChevron {
+	transition: transform 300ms;
+  color: white;
+}
+.AccordionTrigger {
+  @apply flex h-fit py-2 flex-1 cursor-pointer w-full items-center justify-between px-8 text-xl hover:drop-shadow hover:text-green1 hover:bg-green2 hover:scale-105 overflow-auto transition ease-in-out duration-500
+}
+.AccordionTrigger[data-state="open"] > .AccordionChevron {
+	transform: rotate(180deg);
+}
+.AccordionContent {
+	@apply overflow-hidden bg-green1 px-3 mx-3 text-white
+}
+.AccordionContent[data-state="open"] {
+	animation: slideDown 300ms ease-out;
+}
+.AccordionContent[data-state="closed"] {
+	animation: slideUp 300ms ease-out;
+}
+
+@keyframes slideDown {
+	from {
+		height: 0;
+	}
+	to {
+		height: var(--radix-accordion-content-height);
+	}
+}
+
+@keyframes slideUp {
+	from {
+		height: var(--radix-accordion-content-height);
+	}
+	to {
+		height: 0;
+	}
+}
+
