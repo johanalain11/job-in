@@ -17,7 +17,7 @@ const Avis = () => {
 
   return (
     <div className='bg-green1  rounded-br-[50px] rounded-tr-[50px]' id='avis'>
-    <div className='max-w-[1240px] px-6 items-center py-10 md:mt-0 min-h-[500px] m-2 justify-center md:items-start md:ms-4 xl:ms-36 '>
+    <div className='max-w-[1240px] px-6 items-center py-10 md:mt-0 min-h-[500px] justify-center md:items-start md:ms-4 xl:ms-36 '>
         <motion.div
         variants={fadeIn("down", 0.1)}
         initial="hidden"

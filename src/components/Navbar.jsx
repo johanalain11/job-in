@@ -26,7 +26,7 @@ const Navbar = () => {
         <div id='home' className='text-white flex justify-center p-4 h-24 px-auto'>
 
             {/* COTE WEB  */}
-            <span className='flex flex-row w-full max-w-[1240px] justify-between md:fixed bg-transparent backdrop-blur-xl px-3 md:px-auto'>
+            <span className='flex flex-row w-full max-w-[1240px] xl:max-w-[1340px] justify-between md:fixed bg-transparent backdrop-blur-xl px-3 md:px-auto rounded-3xl'>
                 <img src={logo1} alt='/' className='hover:translate-y-1 ml-3'/>
                 <ul className='hidden md:flex flex-row min-w-1/2 w-fit'>
                     {

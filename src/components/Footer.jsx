@@ -8,7 +8,7 @@ import {Form} from "radix-ui"
 
 const Footer = () => {
   return (
-    <div className='bg-black min-h-[170px] h-fit md:h-36'>
+    <div className='footer'>
         <div className=' grid grid-cols-1 md:grid-cols-2 space-x-10 space-y-6 md:space-y-0 max-w-[1240px] text-white items-center py-6 md:mt-0 justify-center mx-auto'>
             <div className='flex flex-col md:flex-row justify-center items-center mx-auto space-y-6'>
                 <div className='md:min-w-60 w-full md:w-fit flex flex-col justify-center items-center mx-auto '>
@@ -36,13 +36,13 @@ const Footer = () => {
                                 Email
                             </Form.Label>
                             <Form.Message
-                                className="text-[13px] text-white opacity-80"
+                                className="text-[13px] text-white opacity-90"
                                 match="valueMissing"
                             >
                                 Entrez votre email s'il vous plait
                             </Form.Message>
                             <Form.Message
-                                className="text-[13px] text-white opacity-80"
+                                className="text-[13px] text-white opacity-90"
                                 match="typeMismatch"
                             >
                                 Votre email n'est pas valide
@@ -86,7 +86,7 @@ const Footer = () => {
         <div className='flex w-full justify-center absolute mx-auto items-center self-center md:-my-64 -my-80'>
             <img src={Logo2} alt='/'/>
         </div>
-        <div className='justify-center flex h-fit text-gray1 p-3 xl:px-10 border-t-2 mx-auto'>
+        <div className='justify-center flex h-fit p-3 xl:px-10 border-t-2 mx-auto'>
             <div>
                 <p className=' max-w-6xl'>@ 2023 Job-in - All rights reserved </p>
             </div>

@@ -42,7 +42,7 @@ p {
   @apply flex flex-row sm:flex-col bg-white w-fit max-w-64 mb-6 px-5 py-3 mx-4 hover:drop-shadow hover:scale-105 hover:-translate-y-2 hover:shadow-yellow2 shadow hover:text-green1 transition ease-in-out duration-500;
 }
 .button{
-  @apply hover:bg-yellow1 hover:px-2.5 hover:drop-shadow-2xl lg:mt-8 hover:-translate-y-2 hover:text-white transition ease-out duration-500;
+  @apply hover:bg-yellow1 hover:px-2.5 hover:drop-shadow-2xl lg:mt-8 hover:-translate-y-2 hover:text-white transition ease-out duration-500 hover:animate-pulse;
 }
 .durée{
   @apply hidden sm:block text-blue1 border border-blue1 mx-1 mb-6 text-sm pt-0.5 font-light px-1 items-center justify-center;
@@ -80,6 +80,10 @@ p {
 }
 .AccordionContent[data-state="closed"] {
 	animation: slideUp 300ms ease-out;
+}
+
+.footer {
+  @apply min-h-[170px] h-fit bg-black text-white bg-fixed
 }
 
 @keyframes slideDown {

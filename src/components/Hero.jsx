@@ -19,8 +19,7 @@ const Hero = () => {
         whileInView={"show"}
         viewport={{once:true, amount: 0.7}}
         className='max-w-[1240px] mt-[-96px] h-screen mx-auto flex flex-col justify-center items-center md:items-start md:ms-4 xl:ms-24 2xl:ms-36'>
-            <p className='p-2 font-semibold text-xl md:text-2xl xl:text-2xl'>Vous voulez obtenir un job facilement?</p>
-            <div className='text-yellow font-bold p-2 text-6xl lg:text-7xl xl:text-8xl text-center md:text-start float-left max-h-32 whitespace-nowrap overflow-visible' >
+            <div className='text-yellow font-bold p-2 xl:mt-8 text-6xl lg:text-7xl xl:text-8xl text-center md:text-start float-left max-h-32 whitespace-nowrap overflow-visible' >
               <ReactTyped strings={['Postulez à', 'Trouvez', 'Cherchez']} typeSpeed={60} backSpeed={100} loop/>
             </div>
             <h1 className='text-white font-bold px-2 text-5xl lg:text-6xl xl:text-7xl'>un job</h1>
