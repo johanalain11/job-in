@@ -41,17 +41,17 @@ const FAQ = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{once:true, amount: 0.7}}
-                className='max-w-[1240px] content-center my-auto'>
-                <h2 className ='font-bold text-4xl text-yellow justify-center flex px-auto w-full my-8 gap-2'>FAQ<span className='text-white'>(Foire aux questions)</span></h2>
+                className='max-w-[1240px] content-center mt-8 mb-24'>
+                <h2 className ='font-bold text-4xl text-yellow justify-center text-center px-auto w-full my-8 gap-2'>FAQ<span className='text-white'> (Questions Fréquentes)</span></h2>
                 <Accordion.Root 
                     type='single'
                     collapsible
                     className='w-full sm:w-[500px] md:w-[800px] xl:w-[1000px] px-3 '>
                     {faqs.map((faq, index) => (
                         <Accordion.Item key={index} value={faq.value} className='AccordionItem'>
-                            <Accordion.Trigger className='AccordionTrigger'>
+                            <Accordion.Trigger className='AccordionTrigger group'>
                                 <h3>{faq.question}</h3>
-                                <ChevronDownIcon className='AccordionChevron' aria-hidden width={10} height={10}/>
+                                <ChevronDownIcon className='AccordionChevron group-hover:text-green1' aria-hidden width={10} height={10}/>
                             </Accordion.Trigger>
                             <Accordion.Content className='AccordionContent'>
                                 <p className='my-1'>{faq.answer}</p>

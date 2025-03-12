@@ -67,13 +67,13 @@ p {
   color: white;
 }
 .AccordionTrigger {
-  @apply flex h-fit py-2 flex-1 cursor-pointer w-full items-center justify-between px-8 text-xl hover:drop-shadow hover:text-green1 hover:bg-green2 hover:scale-105 overflow-auto transition ease-in-out duration-500
+  @apply flex h-fit py-2 flex-1 cursor-pointer w-full items-center justify-between px-8 text-xl hover:drop-shadow hover:text-green1 hover:bg-white hover:scale-105 overflow-auto transition ease-in-out duration-500
 }
 .AccordionTrigger[data-state="open"] > .AccordionChevron {
 	transform: rotate(180deg);
 }
 .AccordionContent {
-	@apply overflow-hidden bg-green1 px-3 mx-3 text-white
+	@apply overflow-hidden bg-green1 px-3 mx-3 text-white rounded-b-xl
 }
 .AccordionContent[data-state="open"] {
 	animation: slideDown 300ms ease-out;
