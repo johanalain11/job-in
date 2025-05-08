@@ -25,8 +25,8 @@ const Navbar = () => {
     <div className='block w-screen'>
         <div id='home' className='text-white flex justify-center p-4 h-24 px-auto'>
 
-            {/* COTE WEB  */}
-            <span className='flex flex-row w-full max-w-[1240px] xl:max-w-[1340px] justify-between md:fixed bg-transparent backdrop-blur-xl px-3 md:px-auto rounded-3xl'>
+            {/** COTE WEB  */}
+            <span className='md:flex flex-row w-full max-w-[1240px] xl:max-w-[1340px] justify-between hidden md:fixed z-50 bg-transparent backdrop-blur-xl px-3 md:px-auto rounded-3xl'>
                 <img src={logo1} alt='/' className='hover:translate-y-1 ml-3'/>
                 <ul className='hidden md:flex flex-row min-w-1/2 w-fit'>
                     {
@@ -39,19 +39,21 @@ const Navbar = () => {
             </span>
 
         {/* COTE MOBILE */}
-            <div onClick={handleNav} className='fixed right-6 md:hidden mt-4'>
-                {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/> }
-            </div>
-            <div className={!nav ? 'fixed left-0 top-0 w-[60%] md:hidden h-full border-r border-green1 bg-green3 ease-in-out duration-200' : 'fixed left-[-100%]' }>
-                <img src={logo1} className='m-4' alt='/'/>
-                <ul className='pt-20 uppercase flex flex-col'>
+            <div className="left-0 top-0 w-full fixed backdrop-blur-xl bg-transparent">
+                <div className='flex justify-between items-center pr-6 md:hidden'>
+                    <img src={logo1} className='m-4' alt='/'/>
+                    <div onClick={handleNav} className='md:hidden'>
+                        {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/> }
+                    </div>
+                </div>
+                <ul className={'pt-4 uppercase flex flex-col border-r border-green1 bg-green3 z-50 sticky' + (nav ? " hidden" : "")}>
                         {
                             nav_links.map(({link, path}) => <li><LinkScroll spy={true} smooth={true} offset={-10} key={link} to={path} activeClass='active'
                             className='p-4 border-b block border-[#164A41] navbar_items2' onClick={handleNav} >{link}</LinkScroll></li>)
                         }
                         <li className='p-4 border-b border-[#164A41] navbar_items2'><Link to='/dashboard'><div className='w-full'>S'inscrire</div></Link></li>
                         <li className='p-4 border-b border-[#164A41] navbar_items2'><Link to='/dashboard'><div className='w-full'>Compte</div></Link></li>
-                    </ul>
+                </ul>
             </div>
         </div>
     </div>
