@@ -112,7 +112,7 @@ Le tableau de bord candidat centralise les fonctionnalités liées à la recherc
 
 L'espace entreprise fournit les outils nécessaires à la gestion du recrutement.
 
-#### 📊 Tableau de bord
+#### 📊 Tableau de bord 
 
 * Vue globale de l'activité ;
 * Accès rapide aux offres et candidatures ;
